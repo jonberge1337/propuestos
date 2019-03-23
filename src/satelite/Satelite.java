@@ -23,9 +23,12 @@ public class Satelite {
     }
     
     public boolean enOrbita() {
+    	boolean orbita = false;
+    	if (distancia_tierra == 0) {
+    		orbita = true;
+    	}
     	
-    	
-    	return true;
+    	return orbita;
     }
     
     public void variaPosicion(double variap, double variam) {

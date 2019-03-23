@@ -10,6 +10,11 @@ public class GestionaSatelite {
 		uno.printPosicion();
 		uno.variaPosicion(8, -7);
 		uno.printPosicion();
+		if(uno.enOrbita()) {
+			System.out.println("Esta en orbita");
+		} else {
+			System.out.println("No esta en orbita");
+		}
 	}
 
 }
