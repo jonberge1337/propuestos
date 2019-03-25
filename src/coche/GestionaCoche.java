@@ -115,7 +115,7 @@ public class GestionaCoche {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Si quieres simularlo con un coche en concreta escribe si y dale enter.");
-		System.out.println("Si no se creara un coche de ficha tecnica.");
+		System.out.println("Si no se creara un coche sin ficha tecnica.");
 		marca = "BMW";
 		modelo = "M3 e30";
 		si = sc.nextLine();
