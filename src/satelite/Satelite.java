@@ -5,13 +5,13 @@ public class Satelite {
     private double paralelo;
     private double distancia_tierra;
     Satelite (double m,double p,double d){
-            meridiano=m;
-            paralelo=p;
-            distancia_tierra=d;
+    	setPosicion(m, p, d);
     }
+    
     Satelite (){
             meridiano=paralelo=distancia_tierra=0;
     }
+    
     public void setPosicion(double m,double p,double d){
             meridiano=m;
             paralelo=p;
@@ -23,9 +23,9 @@ public class Satelite {
     }
     
     public boolean enOrbita() {
-    	boolean orbita = false;
+    	boolean orbita = true;
     	if (distancia_tierra == 0) {
-    		orbita = true;
+    		orbita = false;
     	}
     	
     	return orbita;
