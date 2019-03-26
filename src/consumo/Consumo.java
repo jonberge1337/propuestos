@@ -21,7 +21,7 @@ public class Consumo {
 		int[] hora = new int[3];
 		
 		hora[0] = (int)(kms / vmed);
-		hora[1] = (int)(kms / vmed * 60 - ((int)(kms / vmed) * 60));
+		hora[1] = (int)((kms / vmed - ((int)(kms / vmed))) * 60);
 		
 		return hora;
 	}
