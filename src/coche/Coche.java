@@ -16,23 +16,31 @@ class Coche {
 		
 	}
 	
-	String getModelo() {
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	
+	public String getModelo() {
 		return this.modelo;
 	}
 	
-	String getMarca() {
+	public String getMarca() {
 		return this.marca;
 	}
 	
-	int getVelocidad() {
+	public int getVelocidad() {
 		return velocidad;
 	}
 
-	void acelera (int v) {
+	public void acelera (int v) {
 		velocidad += v;
 	}
 
-	void frena (int z) {
+	public void frena (int z) {
 		velocidad -= z;
 	}
 
